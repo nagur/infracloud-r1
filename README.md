@@ -38,13 +38,19 @@ docker run -d -p 9393:9300 -e CSVSERVER_BORDER='Orange' -v /home/ec2-user/T/solu
 ### The Application will now be accessible at http://Host-IP:9393 (Part 1)
 
 > Remove the existing containers
+<br />
 > Create csvserver.env and upate the contents for the environment
+<br />
 > Run **docker-compose up -d** 
- 
+ <br />
 ### The Application will now be accessible at http://Host-IP:9393 (Part 2)
+
 > Remove the existing containers
+<br />
 > create the prometheus directory
-> Run **docker-compose up -d** 
+<br />
+> Run **docker-compose up -d**
+<br />
 ### The Application will now be accessible at http://Host-IP:9393 and prometheus can be accessed on http://Host-IP:9090 (Part 3)
 
 
