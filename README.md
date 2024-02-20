@@ -3,7 +3,7 @@
 
 <br />
 
-> Run the **_getcsv.sh_** script which will generate an _`inputFile`_ required by the Application. And saved on the current directory
+> Run the **_gencsv.sh_** script which will generate an _`inputFile`_ required by the Application. And saved on the current directory
 
 ```Bash
 ./getcsv.sh
@@ -36,4 +36,16 @@ docker run -d -p 9393:9300 -e CSVSERVER_BORDER='Orange' -v /home/ec2-user/T/solu
 ```
 
 ### The Application will now be accessible at http://Host-IP:9393 (Part 1)
+
+> Remove the existing containers
+> Create csvserver.env and upate the contents for the environment
+> Run **docker-compose up -d** 
+ 
+### The Application will now be accessible at http://Host-IP:9393 (Part 2)
+> Remove the existing containers
+> create the prometheus directory
+> Run **docker-compose up -d** 
+### The Application will now be accessible at http://Host-IP:9393 and prometheus can be accessed on http://Host-IP:9090 (Part 3)
+
+
 
