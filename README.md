@@ -30,27 +30,18 @@ netstat -tupln
 <br />
 
 > To map the Host port (9393) with the Container port (9300) along with an ENV variable, Run the below commands.
-
+### The Application will now be accessible at http://Host-IP:9393 (Part 1)
 ```Bash
 docker run -d -p 9393:9300 -e CSVSERVER_BORDER='Orange' -v /home/ec2-user/T/solution/inputFile:/csvserver/inputdata infracloudio/csvserver:latest
 ```
-
-### The Application will now be accessible at http://Host-IP:9393 (Part 1)
-
-> Remove the existing containers
-<br />
-> Create csvserver.env and upate the contents for the environment
-<br />
-> Run **docker-compose up -d** 
- <br />
-### The Application will now be accessible at http://Host-IP:9393 (Part 2)
-
-> Remove the existing containers
-<br />
-> create the prometheus directory
-<br />
-> Run **docker-compose up -d**
-<br />
+1. Remove existing containers
+2. Create csvserver.env and upate the contents for the environment
+3.  Run **docker-compose up -d** 
+ ### The Application will now be accessible at http://Host-IP:9393 (Part 2)
+1. Remove existing containers
+2. create the prometheus directory
+3. Run **docker-compose up -d**
+   
 ### The Application will now be accessible at http://Host-IP:9393 and prometheus can be accessed on http://Host-IP:9090 (Part 3)
 
 
