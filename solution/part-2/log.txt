@@ -1,0 +1,20 @@
+root@cks-master:~# docker-compose up -d
+Starting infra-csvserver ... done
+root@cks-master:~# docker ps
+CONTAINER ID   IMAGE                    COMMAND                  CREATED          STATUS         PORTS                                       NAMES
+4d66028bad83   infracloudio/csvserver   "/csvserver/csvserver"   12 seconds ago   Up 3 seconds   0.0.0.0:9393->9300/tcp, :::9393->9300/tcp   infra-csvserver
+root@cks-master:~# curl http://localhost:9393
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSV Server</title>
+  <style>
+  th, td {
+    padding: 5px;
+  }
+  </style>
+</head>
+<body>
+<!-- Y3N2c2VydmVyIGdlbmVyYXRlZCBhdDogMTcwODQyMDQ0MA== -->
+<h3 style="border:3px solid Orange">Welcome to the CSV Server</h3><table><tr><th>Index</th><th>Value</th></tr><tr><td>2</td><td>998</td></tr><tr><td>3</td><td>763</td></tr><tr><td>4</td><td>718</td></tr><tr><td>5</td><td>741</td></tr><tr><td>6</td><td>120</td></tr><tr><td>7</td><td>458</td></tr><tr><td>8</td><td>800</td></tr></table></body></html>root@cks-master:~# cd infracloud-r1/
+
