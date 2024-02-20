@@ -1,7 +1,7 @@
 version: "3"
 services:
   mycsvserver:
-    image: "infracloudio/csvserver"
+    image: "infracloudio/csvserver:latest"
     container_name: infra-csvserver
     ports:
     - 9393:9300
